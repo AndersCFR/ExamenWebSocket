@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="encabezado">
+    <h1>Dibujillo</h1>
+    <br>
+    <p>¿Cuál es la respuesta correcta?</p>
+  </div>
+  <!--
+    <div *ngIf="activo; else loggedOut">   
+      -->  
+  <!--
+    <div *ngIf="activo;else a">
+      <h3>{{resultado}}</h3>
+   </div>
+  
+   <ng-template #a>
+    <h3>iii</h3>
+    </ng-template>
+
+  -->
+  <h3>{{resultado}}</h3>
+
+  <button (click)="reiniciar()">Reiniciar</button>
+ 
+  <!-- <ng-template #jugar>-->
+  <img src={{imagen}} width="50%" height="50%" class="imagen">
+  <div class="botones">
+    <button (click)="sendMessage(opcionA)">{{opcionA}}</button>
+    <button (click)="sendMessage(opcionB)">{{opcionB}}</button>
+    <button (click)="sendMessage(opcionC)">{{opcionC}}</button>
+  </div>
+<!-- </ng-template>-->
+
+</body>
+</html>
